@@ -236,5 +236,52 @@ namespace Calculate_TP3
         {
 
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode== Keys.NumPad0) 
+            {
+               btn0.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad1)
+            {
+                bttn1.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad2)
+            {
+                btn2.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad3)
+            {
+                btn3.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad4)
+            {
+                btn4.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad5)
+            {
+                btn5.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad6)
+            {
+                btn6.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad7)
+            {
+                btn1.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad8)
+            {
+                btn8.PerformClick();
+            }
+            if (e.KeyCode == Keys.NumPad9)
+            {
+                btn9.PerformClick();
+            }
+          
+
+
+        }
     }
 }
