@@ -280,6 +280,10 @@ namespace Calculate_TP3
                 btn9.PerformClick();
             }
           
+            if(txtb.Text=="+")
+            {
+                btnplus.PerformClick();
+            }
 
 
         }

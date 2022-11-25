@@ -232,6 +232,7 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnegal;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 506);
