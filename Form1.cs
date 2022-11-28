@@ -37,10 +37,12 @@ namespace Calculate_TP3
 
             { 
                 txtb.Text="0"; 
+                lbl1.Text="0";
             }
             else
             {
                 txtb.Text+="0";
+                lbl1.Text+="0";
             }
         }
 
@@ -49,6 +51,7 @@ namespace Calculate_TP3
             if(!txtb.Text.Contains(".")) 
             {
                 txtb.Text += ".";
+                lbl1.Text = ".";
             }
            
         }
@@ -58,10 +61,12 @@ namespace Calculate_TP3
             if(txtb.Text=="0") 
             {
               txtb.Text="1";
+                lbl1.Text="1";
             }
             else
             {
                 txtb.Text+="1";
+                lbl1.Text+="1";
             }
         }
 
@@ -70,10 +75,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "2";
+                lbl1.Text="2";
             }
             else
             {
                 txtb.Text += "2";
+                lbl1.Text+="2";
             }
         }
 
@@ -82,10 +89,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "3";
+                lbl1.Text="3";
             }
             else
             {
                 txtb.Text += "3";
+                lbl1.Text+="3";
             }
         }
 
@@ -94,10 +103,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "4";
+                lbl1.Text="4";
             }
             else
             {
                 txtb.Text += "4";
+                lbl1.Text+="4";
             }
         }
 
@@ -106,10 +117,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "5";
+                lbl1.Text="5";
             }
             else
             {
                 txtb.Text += "5";
+                    lbl1.Text+="5";
             }
         }
 
@@ -118,10 +131,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "6";
+                lbl1.Text="6";
             }
             else
             {
                 txtb.Text += "6";
+                lbl1.Text+="6";
             }
         }
 
@@ -130,10 +145,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "7";
+                lbl1.Text = "7";
             }
             else
             {
                 txtb.Text += "7";
+                lbl1.Text += "7";
             }
         }
 
@@ -142,10 +159,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "8";
+                lbl1.Text = "8";
             }
             else
             {
                 txtb.Text += "8";
+                lbl1.Text += "8";
             }
         }
 
@@ -154,10 +173,12 @@ namespace Calculate_TP3
             if (txtb.Text == "0")
             {
                 txtb.Text = "9";
+                lbl1.Text = "9";
             }
             else
             {
                 txtb.Text += "9";
+                lbl1.Text += "9";
             }
         }
 
@@ -166,6 +187,7 @@ namespace Calculate_TP3
             firstvalue = Decimal.Parse(txtb.Text);
             txtb.Clear();
             operation = "-";
+            lbl1.Text += "-";
         }
 
         private void btnplus_Click(object sender, EventArgs e)
@@ -173,6 +195,7 @@ namespace Calculate_TP3
             firstvalue = Decimal.Parse(txtb.Text);
             txtb.Clear();
             operation = "+";
+            lbl1.Text += "+";
         }
 
         private void btnfois_Click(object sender, EventArgs e)
@@ -180,6 +203,7 @@ namespace Calculate_TP3
             firstvalue = Decimal.Parse(txtb.Text);
             txtb.Clear();
             operation = "*";
+            lbl1.Text += "*";
         }
 
         private void btndiv_Click(object sender, EventArgs e)
@@ -188,11 +212,13 @@ namespace Calculate_TP3
             firstvalue = Decimal.Parse(txtb.Text);
             txtb.Clear();
             operation = "/";
+            lbl1.Text += "/";
         }
 
         private void btnegal_Click(object sender, EventArgs e)
         {
-            switch(operation)
+            lbl1.Text += "=";
+            switch (operation)
             {
                 case "-":
                     Secondvalue=Decimal.Parse(txtb.Text);
@@ -230,6 +256,7 @@ namespace Calculate_TP3
             Secondvalue= 0.0m;
             firstvalue = 0.0m;
             txtb.Text = "0";
+            lbl1.Text="";
         }
 
         private void txtb_KeyPress(object sender, KeyPressEventArgs e)
@@ -280,10 +307,7 @@ namespace Calculate_TP3
                 btn9.PerformClick();
             }
           
-            if(txtb.Text=="+")
-            {
-                btnplus.PerformClick();
-            }
+           
 
 
         }
