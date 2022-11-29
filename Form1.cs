@@ -203,7 +203,7 @@ namespace Calculate_TP3
             firstvalue = Decimal.Parse(txtb.Text);
             txtb.Clear();
             operation = "*";
-            lbl1.Text += "*";
+            lbl1.Text += "×";
         }
 
         private void btndiv_Click(object sender, EventArgs e)
